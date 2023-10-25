@@ -1,4 +1,4 @@
-module github.com/wfunc/goex/v2
+module github.com/wfunc/goex
 
 go 1.18
 

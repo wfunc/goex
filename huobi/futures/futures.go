@@ -1,7 +1,7 @@
 package futures
 
 import (
-	. "github.com/wfunc/goex/v2/options"
+	. "github.com/wfunc/goex/options"
 )
 
 type Futures struct {

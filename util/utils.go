@@ -5,13 +5,14 @@ import (
 	"compress/flate"
 	"compress/gzip"
 	"encoding/json"
-	"github.com/google/uuid"
-	"github.com/spf13/cast"
-	"github.com/wfunc/goex/v2/model"
 	"io/ioutil"
 	"net/url"
 	"strconv"
 	"strings"
+
+	"github.com/google/uuid"
+	"github.com/spf13/cast"
+	"github.com/wfunc/goex/model"
 )
 
 // FloatToString 保留的小数点位数,去除末尾多余的0(StripTrailingZeros)

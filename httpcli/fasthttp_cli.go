@@ -2,10 +2,11 @@ package httpcli
 
 import (
 	"errors"
+	"time"
+
 	"github.com/valyala/fasthttp"
 	"github.com/valyala/fasthttp/fasthttpproxy"
-	"github.com/wfunc/goex/v2/logger"
-	"time"
+	"github.com/wfunc/goex/logger"
 )
 
 type FastHttpCli struct {
@@ -16,7 +17,7 @@ type FastHttpCli struct {
 
 func NewFastHttpCli() *FastHttpCli {
 	cli := &fasthttp.Client{
-		Name:                "github.com/wfunc/goex/v2/",
+		Name:                "github.com/wfunc/goex/",
 		MaxConnsPerHost:     512,
 		MaxIdleConnDuration: 20 * time.Second,
 		ReadTimeout:         10 * time.Second,

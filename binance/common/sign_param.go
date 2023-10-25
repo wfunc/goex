@@ -5,7 +5,7 @@ import (
 	"net/url"
 	"time"
 
-	"github.com/wfunc/goex/v2/util"
+	"github.com/wfunc/goex/util"
 )
 
 func SignParams(params *url.Values, secret string) {

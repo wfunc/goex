@@ -1,7 +1,7 @@
 package futures
 
 import (
-	. "github.com/wfunc/goex/v2/model"
+	. "github.com/wfunc/goex/model"
 )
 
 func AdaptSideToDirectionAndOffset(side OrderSide) (direction, offset string) {

@@ -5,10 +5,10 @@ import (
 	"net/http"
 	"net/url"
 
-	"github.com/wfunc/goex/v2/model"
-	"github.com/wfunc/goex/v2/okx/common"
-	"github.com/wfunc/goex/v2/options"
-	"github.com/wfunc/goex/v2/util"
+	"github.com/wfunc/goex/model"
+	"github.com/wfunc/goex/okx/common"
+	"github.com/wfunc/goex/options"
+	"github.com/wfunc/goex/util"
 )
 
 type PrvApi struct {

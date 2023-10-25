@@ -1,8 +1,8 @@
 package spot
 
 import (
-	. "github.com/wfunc/goex/v2/model"
-	. "github.com/wfunc/goex/v2/options"
+	. "github.com/wfunc/goex/model"
+	. "github.com/wfunc/goex/options"
 )
 
 var (

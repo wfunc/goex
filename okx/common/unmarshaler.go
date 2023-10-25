@@ -8,8 +8,8 @@ import (
 
 	"github.com/buger/jsonparser"
 	"github.com/spf13/cast"
-	"github.com/wfunc/goex/v2/logger"
-	. "github.com/wfunc/goex/v2/model"
+	"github.com/wfunc/goex/logger"
+	. "github.com/wfunc/goex/model"
 )
 
 type RespUnmarshaler struct {

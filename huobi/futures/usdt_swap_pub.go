@@ -4,12 +4,13 @@ import (
 	"encoding/json"
 	"errors"
 	"fmt"
-	. "github.com/wfunc/goex/v2/httpcli"
-	"github.com/wfunc/goex/v2/logger"
-	. "github.com/wfunc/goex/v2/model"
-	. "github.com/wfunc/goex/v2/util"
 	"net/http"
 	"net/url"
+
+	. "github.com/wfunc/goex/httpcli"
+	"github.com/wfunc/goex/logger"
+	. "github.com/wfunc/goex/model"
+	. "github.com/wfunc/goex/util"
 )
 
 func (f *USDTSwap) GetName() string {

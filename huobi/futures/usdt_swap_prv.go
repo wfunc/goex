@@ -5,14 +5,15 @@ import (
 	"encoding/json"
 	"errors"
 	"fmt"
-	. "github.com/wfunc/goex/v2/httpcli"
-	"github.com/wfunc/goex/v2/huobi/common"
-	"github.com/wfunc/goex/v2/logger"
-	. "github.com/wfunc/goex/v2/model"
-	"github.com/wfunc/goex/v2/options"
-	. "github.com/wfunc/goex/v2/util"
 	"net/http"
 	"net/url"
+
+	. "github.com/wfunc/goex/httpcli"
+	"github.com/wfunc/goex/huobi/common"
+	"github.com/wfunc/goex/logger"
+	. "github.com/wfunc/goex/model"
+	"github.com/wfunc/goex/options"
+	. "github.com/wfunc/goex/util"
 )
 
 type BaseResponse struct {

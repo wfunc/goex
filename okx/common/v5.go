@@ -3,7 +3,7 @@ package common
 import (
 	"encoding/json"
 
-	. "github.com/wfunc/goex/v2/options"
+	. "github.com/wfunc/goex/options"
 )
 
 type OKxV5 struct {

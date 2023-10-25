@@ -7,8 +7,8 @@ import (
 
 	"github.com/buger/jsonparser"
 	"github.com/spf13/cast"
-	"github.com/wfunc/goex/v2/binance/common"
-	"github.com/wfunc/goex/v2/model"
+	"github.com/wfunc/goex/binance/common"
+	"github.com/wfunc/goex/model"
 )
 
 func UnmarshalGetExchangeInfoResponse(data []byte) (map[string]model.CurrencyPair, error) {

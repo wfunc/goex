@@ -1,7 +1,7 @@
 package common
 
 import (
-	"github.com/wfunc/goex/v2/model"
+	"github.com/wfunc/goex/model"
 )
 
 func AdaptKlinePeriodToSymbol(period model.KlinePeriod) string {

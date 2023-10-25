@@ -1,7 +1,7 @@
 package goex
 
 import (
-	"github.com/wfunc/goex/v2/model"
+	"github.com/wfunc/goex/model"
 )
 
 // IPubRest is a public interface that does not require authorization."

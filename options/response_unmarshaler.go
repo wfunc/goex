@@ -1,6 +1,6 @@
 package options
 
-import "github.com/wfunc/goex/v2/model"
+import "github.com/wfunc/goex/model"
 
 type ResponseUnmarshaler func([]byte, interface{}) error
 type GetTickerResponseUnmarshaler func([]byte) (*model.Ticker, error)

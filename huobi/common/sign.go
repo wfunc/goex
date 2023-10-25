@@ -2,10 +2,11 @@ package common
 
 import (
 	"fmt"
-	"github.com/wfunc/goex/v2/options"
-	"github.com/wfunc/goex/v2/util"
 	"net/url"
 	"time"
+
+	"github.com/wfunc/goex/options"
+	"github.com/wfunc/goex/util"
 )
 
 func DoSignParam(httpMethod, reqUrl string, apiOpt options.ApiOptions) *url.Values {

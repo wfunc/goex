@@ -3,11 +3,11 @@ package goex
 import (
 	"reflect"
 
-	"github.com/wfunc/goex/v2/binance"
-	"github.com/wfunc/goex/v2/httpcli"
-	"github.com/wfunc/goex/v2/huobi"
-	"github.com/wfunc/goex/v2/logger"
-	"github.com/wfunc/goex/v2/okx"
+	"github.com/wfunc/goex/binance"
+	"github.com/wfunc/goex/httpcli"
+	"github.com/wfunc/goex/huobi"
+	"github.com/wfunc/goex/logger"
+	"github.com/wfunc/goex/okx"
 )
 
 var (

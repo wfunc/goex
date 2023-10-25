@@ -3,8 +3,8 @@ package spot
 import (
 	"errors"
 
-	. "github.com/wfunc/goex/v2/model"
-	"github.com/wfunc/goex/v2/okx/common"
+	. "github.com/wfunc/goex/model"
+	"github.com/wfunc/goex/okx/common"
 )
 
 type PrvApi struct {
