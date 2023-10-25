@@ -2,7 +2,8 @@ package common
 
 import (
 	"encoding/json"
-	. "github.com/nntaoli-project/goex/v2/options"
+
+	. "github.com/wfunc/goex/v2/options"
 )
 
 type OKxV5 struct {
@@ -23,6 +24,7 @@ func New() *OKxV5 {
 		UriOpts: UriOptions{
 			Endpoint:            "https://www.okx.com",
 			KlineUri:            "/api/v5/market/candles",
+			HistoryKlineUri:     "/api/v5/market/history-candles",
 			TickerUri:           "/api/v5/market/ticker",
 			DepthUri:            "/api/v5/market/books",
 			NewOrderUri:         "/api/v5/trade/order",

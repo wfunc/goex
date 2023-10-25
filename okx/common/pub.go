@@ -2,12 +2,13 @@ package common
 
 import (
 	"fmt"
-	. "github.com/nntaoli-project/goex/v2/httpcli"
-	"github.com/nntaoli-project/goex/v2/logger"
-	. "github.com/nntaoli-project/goex/v2/model"
-	. "github.com/nntaoli-project/goex/v2/util"
 	"net/http"
 	"net/url"
+
+	. "github.com/wfunc/goex/v2/httpcli"
+	"github.com/wfunc/goex/v2/logger"
+	. "github.com/wfunc/goex/v2/model"
+	. "github.com/wfunc/goex/v2/util"
 )
 
 func (okx *OKxV5) GetName() string {
@@ -60,6 +61,22 @@ func (okx *OKxV5) GetKline(pair CurrencyPair, period KlinePeriod, opt ...OptionP
 	param.Set("instId", pair.Symbol)
 	param.Set("bar", AdaptKlinePeriodToSymbol(period))
 	param.Set("limit", "100")
+	MergeOptionParams(&param, opt...)
+
+	data, responseBody, err := okx.DoNoAuthRequest(http.MethodGet, reqUrl, &param)
+	if err != nil {
+		return nil, nil, err
+	}
+	klines, err := okx.UnmarshalOpts.KlineUnmarshaler(data)
+	return klines, responseBody, err
+}
+
+func (okx *OKxV5) GetHistoryKline(pair CurrencyPair, period KlinePeriod, opt ...OptionParameter) ([]Kline, []byte, error) {
+	reqUrl := fmt.Sprintf("%s%s", okx.UriOpts.Endpoint, okx.UriOpts.HistoryKlineUri)
+	param := url.Values{}
+	param.Set("instId", pair.Symbol)
+	param.Set("bar", AdaptKlinePeriodToSymbol(period))
+	param.Set("limit", "150")
 	MergeOptionParams(&param, opt...)
 
 	data, responseBody, err := okx.DoNoAuthRequest(http.MethodGet, reqUrl, &param)

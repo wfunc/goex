@@ -3,15 +3,16 @@ package common
 import (
 	"errors"
 	"fmt"
-	"github.com/nntaoli-project/goex/v2/httpcli"
-	"github.com/nntaoli-project/goex/v2/logger"
-	"github.com/nntaoli-project/goex/v2/model"
-	"github.com/nntaoli-project/goex/v2/options"
-	"github.com/nntaoli-project/goex/v2/util"
 	"net/http"
 	"net/url"
 	"strings"
 	"time"
+
+	"github.com/wfunc/goex/v2/httpcli"
+	"github.com/wfunc/goex/v2/logger"
+	"github.com/wfunc/goex/v2/model"
+	"github.com/wfunc/goex/v2/options"
+	"github.com/wfunc/goex/v2/util"
 )
 
 type Prv struct {

@@ -1,8 +1,8 @@
 package fapi
 
 import (
-	"github.com/nntaoli-project/goex/v2/model"
-	"github.com/nntaoli-project/goex/v2/options"
+	"github.com/wfunc/goex/v2/model"
+	"github.com/wfunc/goex/v2/options"
 )
 
 type FApi struct {

@@ -1,12 +1,13 @@
 package goex
 
 import (
-	"github.com/nntaoli-project/goex/v2/binance"
-	"github.com/nntaoli-project/goex/v2/httpcli"
-	"github.com/nntaoli-project/goex/v2/huobi"
-	"github.com/nntaoli-project/goex/v2/logger"
-	"github.com/nntaoli-project/goex/v2/okx"
 	"reflect"
+
+	"github.com/wfunc/goex/v2/binance"
+	"github.com/wfunc/goex/v2/httpcli"
+	"github.com/wfunc/goex/v2/huobi"
+	"github.com/wfunc/goex/v2/logger"
+	"github.com/wfunc/goex/v2/okx"
 )
 
 var (

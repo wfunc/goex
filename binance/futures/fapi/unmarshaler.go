@@ -3,11 +3,12 @@ package fapi
 import (
 	"errors"
 	"fmt"
-	"github.com/buger/jsonparser"
-	"github.com/nntaoli-project/goex/v2/binance/common"
-	"github.com/nntaoli-project/goex/v2/model"
-	"github.com/spf13/cast"
 	"time"
+
+	"github.com/buger/jsonparser"
+	"github.com/spf13/cast"
+	"github.com/wfunc/goex/v2/binance/common"
+	"github.com/wfunc/goex/v2/model"
 )
 
 func UnmarshalGetExchangeInfoResponse(data []byte) (map[string]model.CurrencyPair, error) {

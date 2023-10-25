@@ -2,9 +2,10 @@ package spot
 
 import (
 	"encoding/json"
+
 	"github.com/buger/jsonparser"
-	. "github.com/nntaoli-project/goex/v2/model"
 	"github.com/spf13/cast"
+	. "github.com/wfunc/goex/v2/model"
 )
 
 func UnmarshalResponse(data []byte, i interface{}) error {

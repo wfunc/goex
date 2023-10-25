@@ -4,7 +4,7 @@ import (
 	"context"
 	"errors"
 	"fmt"
-	"github.com/nntaoli-project/goex/v2/logger"
+	"github.com/wfunc/goex/v2/logger"
 	"io"
 	"io/ioutil"
 	"net/http"
