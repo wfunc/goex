@@ -76,8 +76,10 @@ func (okx *OKxV5) GetHistoryKline(pair CurrencyPair, period KlinePeriod, opt ...
 	param := url.Values{}
 	param.Set("instId", pair.Symbol)
 	param.Set("bar", AdaptKlinePeriodToSymbol(period))
-	param.Set("limit", "100")
 	MergeOptionParams(&param, opt...)
+	if param.Get("limit") == "" {
+		param.Set("limit", "100")
+	}
 
 	data, responseBody, err := okx.DoNoAuthRequest(http.MethodGet, reqUrl, &param)
 	if err != nil {
