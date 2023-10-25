@@ -96,13 +96,15 @@ type Depth struct {
 }
 
 type Kline struct {
-	Pair      CurrencyPair `json:"pair"`
-	Timestamp int64        `json:"t"`
-	Open      float64      `json:"o"`
-	Close     float64      `json:"s"`
-	High      float64      `json:"h"`
-	Low       float64      `json:"l"`
-	Vol       float64      `json:"v"`
+	Pair        CurrencyPair `json:"pair"`
+	Timestamp   int64        `json:"t"`
+	Open        float64      `json:"o"`
+	Close       float64      `json:"s"`
+	High        float64      `json:"h"`
+	Low         float64      `json:"l"`
+	Vol         float64      `json:"v"`
+	VolCcy      float64      `json:"vol_ccy"`
+	VolCcyQuote float64      `json:"vol_ccy_quote"`
 }
 
 type Order struct {
